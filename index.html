@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper</title>
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+
+  <body>
+    <!-- Scors -->
+    <header
+      class="mx-auto w-full max-w-[740px] px-3 py-10 max-[600px]:max-w-full max-[600px]:p-6"
+    >
+      <div
+        class="flex items-center justify-between rounded-[12px] border-[3px] border-grey px-4 py-[14px] max-[600px]:rounded-[3px] max-[600px]:p-4"
+      >
+        <img
+          class="easy_logo h-[89px] w-[152px] object-contain max-[600px]:h-10 max-[600px]:w-[79px]"
+          src="images/easy_logo.svg"
+          alt=""
+          width="150"
+          height="90"
+        />
+        <img
+          class="hard_logo h-[89px] w-[152px] object-contain max-[600px]:h-10 max-[600px]:w-[79px] hidden"
+          src="images/hard_logo.svg"
+          alt=""
+          width="150"
+          height="90"
+        />
+
+        <span
+          class="flex w-[126px] flex-col items-center rounded-[6px] bg-box p-3 shadow-drop max-[600px]:w-16 max-[600px]:rounded max-[600px]:p-[8px]"
+        >
+          <span
+            class="font-semibold uppercase tracking-[2.5px] text-blue max-[600px]:text-[10px]"
+            >Score</span
+          >
+          <span
+            class="text-[64px] font-bold leading-none text-dark-blue max-[600px]:text-[40px]"
+            id="score"
+            >0</span
+          >
+        </span>
+      </div>
+    </header>
+    <!-- Choose zone -->
+    <section class="flex justify-center" id="chooseZone">
+      <div
+        class="grid grid-cols-2 grid-rows-2 w-full max-w-[400px] gap-x-20 gap-y-6 bg-no-repeat bg-center bg-[url(../images/triangle.svg)]"
+        id="zoneGrid"
+      >
+        <button class="place-items-center">
+          <img
+            class="hand w-[200px] h-[200px]"
+            src="images/paper.svg"
+            alt="paper"
+            width="150px"
+            height="150px"
+          />
+        </button>
+        <button class="place-items-center">
+          <img
+            class="hand w-[200px] h-[200px]"
+            src="images/scissors.svg"
+            alt="scissors"
+            width="150px"
+            height="150px"
+          />
+        </button>
+        <button class="col-start-1 col-end-3 place-items-center">
+          <img
+            class="hand w-[200px] h-[200px]"
+            src="images/rock.svg"
+            alt="rock"
+            width="150px"
+            height="150px"
+          />
+        </button>
+        <button class="place-items-center">
+          <img
+            class="hand w-[200px] h-[200px] mode-hard hidden"
+            src="images/lizard.svg"
+            alt="lizard"
+            width="150px"
+            height="150px"
+          />
+        </button>
+        <button class="place-items-center">
+          <img
+            class="hand w-[200px] h-[200px] mode-hard hidden"
+            src="images/spock.svg"
+            alt="spock"
+            width="150px"
+            height="150px"
+          />
+        </button>
+      </div>
+    </section>
+    <!-- Status zone -->
+    <section class="hidden" id="statusZone">
+      <div class="flex justify-center place items-center">
+        <!-- Player -->
+        <img id="player" src="" alt="" />
+
+        <div class="flex-col-reverse">
+          <button id="playAgain" class="btn btn-accent">Replase</button>
+          <div
+            role="alert"
+            class="alert alert-info alert-dash w-fit h-fit px-3 py-1 text-sm"
+          >
+            <span id="statusText">Loading...</span>
+          </div>
+        </div>
+
+        <img class="ai" src="images/oval.svg" alt="oval" />
+      </div>
+    </section>
+    <button id="modeChanger" class="btn btn-info absolute bottom-25 right-5">
+      Easy mode
+    </button>
+    <button
+      popovertarget="modal"
+      class="fixed bottom-10 right-4 border border-white text-white px-6 py-2 rounded-lg tracking-widest"
+    >
+      RULES
+    </button>
+    <div
+      id="modal"
+      popover="auto"
+      class="p-4 bg-white rounded-lg shadow-lg ml-136 mt-30"
+    >
+      <img
+        class="easy_rules mb-4"
+        src="images/easy_rules.svg"
+        alt="Easy Rules"
+      />
+      <img
+        class="hard_rules mb-4 hidden"
+        src="images/hard_rules.svg"
+        alt="Easy Rules"
+      />
+    </div>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
