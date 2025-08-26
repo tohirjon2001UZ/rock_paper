@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
@@ -1449,29 +1450,17 @@
   .h-\[89px\] {
     height: 89px;
   }
-  .h-\[173px\] {
-    height: 173px;
-  }
   .h-\[200px\] {
     height: 200px;
   }
   .h-fit {
     height: fit-content;
   }
-  .min-h-\[500\] {
-    min-height: 500;
-  }
-  .min-h-\[500px\] {
-    min-height: 500px;
-  }
   .w-\[126px\] {
     width: 126px;
   }
   .w-\[152px\] {
     width: 152px;
-  }
-  .w-\[168px\] {
-    width: 168px;
   }
   .w-\[200px\] {
     width: 200px;
@@ -1482,26 +1471,11 @@
   .w-full {
     width: 100%;
   }
-  .max-w-\[0px\] {
-    max-width: 0px;
-  }
-  .max-w-\[00px\] {
-    max-width: 00px;
-  }
   .max-w-\[400px\] {
     max-width: 400px;
   }
-  .max-w-\[500px\] {
-    max-width: 500px;
-  }
   .max-w-\[540px\] {
     max-width: 540px;
-  }
-  .max-w-\[550px\] {
-    max-width: 550px;
-  }
-  .max-w-\[600px\] {
-    max-width: 600px;
   }
   .max-w-\[740px\] {
     max-width: 740px;
@@ -1573,17 +1547,11 @@
   .gap-y-6 {
     row-gap: calc(var(--spacing) * 6);
   }
-  .place-self-center {
-    place-self: center;
-  }
   .rounded-\[6px\] {
     border-radius: 6px;
   }
   .rounded-\[12px\] {
     border-radius: 12px;
-  }
-  .rounded-full {
-    border-radius: calc(infinity * 1px);
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
@@ -1604,99 +1572,31 @@
   .border-white {
     border-color: var(--color-white);
   }
-  .bg-\[url\] {
-    background-color: url;
+  .bg-amber-400 {
+    background-color: var(--color-amber-400);
   }
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-conic {
+  .bg-gradient-to-l {
+    --tw-gradient-position: to left in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .bg-radial {
     --tw-gradient-position: in oklab;
-    background-image: conic-gradient(var(--tw-gradient-stops));
+    background-image: radial-gradient(var(--tw-gradient-stops));
   }
-  .bg-\[url\(\"\"\)\] {
-    background-image: url("");
-  }
-  .bg-\[url\(\'\'\)\] {
-    background-image: url('');
-  }
-  .bg-\[url\(\'\.\.\'\)\] {
-    background-image: url('..');
-  }
-  .bg-\[url\(\'\.\.\/images\'\)\] {
-    background-image: url('../images');
-  }
-  .bg-\[url\(\'\.\.\/images\/\'\)\] {
-    background-image: url('../images/');
-  }
-  .bg-\[url\(\'\.\.\/images\/\.svg\'\)\] {
-    background-image: url('../images/.svg');
-  }
-  .bg-\[url\(\'\.\.\/images\/pali\.svg\'\)\] {
-    background-image: url('../images/pali.svg');
-  }
-  .bg-\[url\(\'\.\.\/images\/paligon\.svg\'\)\] {
-    background-image: url('../images/paligon.svg');
-  }
-  .bg-\[url\(\'\.\.\/images\/poli\.svg\'\)\] {
-    background-image: url('../images/poli.svg');
-  }
-  .bg-\[url\(\'\.\.\/images\/poliy\.svg\'\)\] {
-    background-image: url('../images/poliy.svg');
+  .bg-\[radial-gradient\(134\.34\%_134\.34\%_at_50\%_0\%\,_\#1F3757_0\%\,_\#131537_100\%\)\] {
+    background-image: radial-gradient(134.34% 134.34% at 50% 0%, #1F3757 0%, #131537 100%);
   }
   .bg-\[url\(\'\.\.\/images\/poliygon\.svg\'\)\] {
     background-image: url('../images/poliygon.svg');
   }
-  .bg-\[url\(\'\.\.\/images\/tr\'\)\] {
-    background-image: url('../images/tr');
-  }
-  .bg-\[url\(\'\.\.\/images\/tr\.svg\'\)\] {
-    background-image: url('../images/tr.svg');
-  }
-  .bg-\[url\(\'\.\.\/images\/tri\'\)\] {
-    background-image: url('../images/tri');
-  }
-  .bg-\[url\(\'\.\.\/images\/tri\.svg\'\)\] {
-    background-image: url('../images/tri.svg');
-  }
-  .bg-\[url\(\'\.\.\/images\/triang\'\)\] {
-    background-image: url('../images/triang');
-  }
-  .bg-\[url\(\'\.\.\/images\/triangle\'\)\] {
-    background-image: url('../images/triangle');
-  }
-  .bg-\[url\(\'\.\.\/images\/triangle\.svg\'\)\] {
-    background-image: url('../images/triangle.svg');
-  }
-  .bg-\[url\(\)\] {
-    background-image: url();
-  }
-  .bg-\[url\(\.\.\/images\)\] {
-    background-image: url(../images);
-  }
-  .bg-\[url\(\.\.\/images\/\)\] {
-    background-image: url(../images/);
-  }
-  .bg-\[url\(\.\.\/images\/tri\)\] {
-    background-image: url(../images/tri);
-  }
-  .bg-\[url\(\.\.\/images\/triangl\)\] {
-    background-image: url(../images/triangl);
-  }
-  .bg-\[url\(\.\.\/images\/triangle\)\] {
-    background-image: url(../images/triangle);
-  }
   .bg-\[url\(\.\.\/images\/triangle\.svg\)\] {
     background-image: url(../images/triangle.svg);
   }
-  .bg-contain {
-    background-size: contain;
-  }
   .bg-center {
     background-position: center;
-  }
-  .bg-top {
-    background-position: top;
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
@@ -1786,11 +1686,6 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
-  .transition-shadow {
-    transition-property: box-shadow;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
-  }
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
@@ -1812,11 +1707,6 @@
       height: calc(var(--spacing) * 10);
     }
   }
-  .max-\[600px\]\:h-\[133px\] {
-    @media (width < 600px) {
-      height: 133px;
-    }
-  }
   .max-\[600px\]\:w-16 {
     @media (width < 600px) {
       width: calc(var(--spacing) * 16);
@@ -1825,11 +1715,6 @@
   .max-\[600px\]\:w-\[79px\] {
     @media (width < 600px) {
       width: 79px;
-    }
-  }
-  .max-\[600px\]\:w-\[130px\] {
-    @media (width < 600px) {
-      width: 130px;
     }
   }
   .max-\[600px\]\:max-w-full {
